@@ -1,0 +1,11 @@
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\bin\Debug\FinalFantasy2_J_WeaponEditor.exe.config
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\bin\Debug\FinalFantasy2_J_WeaponEditor.exe
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\bin\Debug\FinalFantasy2_J_WeaponEditor.pdb
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.csproj.AssemblyReference.cache
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.csproj.SuggestedBindingRedirects.cache
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.Form1.resources
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.Properties.Resources.resources
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.csproj.GenerateResource.cache
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.csproj.CoreCompileInputs.cache
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.exe
+C:\Users\evening\source\repos\FinalFantasy2_J_WeaponEditor\obj\Debug\FinalFantasy2_J_WeaponEditor.pdb
