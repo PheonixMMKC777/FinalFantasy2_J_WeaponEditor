@@ -135,11 +135,29 @@ namespace FinalFantasy2_J_WeaponEditor
             if (this.StatBoostComboBox.SelectedIndex == 4) { StatByte = 0x04; }
             PRG.ROM[PRG.CurrentOffset + 4] = StatByte;
 
-            byte ElemWriteByte = (byte)0x00;
-            //tricky bool to int manip??
-            if (PRG.Bit0 == true) { ElemWriteByte = (byte)0x01; }
-            //ElemWriteByte = ElemWriteByte << 1;
-            if (PRG.Bit1 == true) { ElemWriteByte = ElemWriteByte; }
+            int ElemWriteByte = 0x00;
+            PRG.Bit0 = this.ElemDefenseCheckList.GetItemChecked(0);
+            PRG.Bit1 = this.ElemDefenseCheckList.GetItemChecked(1);
+            PRG.Bit2 = this.ElemDefenseCheckList.GetItemChecked(2);
+            PRG.Bit3 = this.ElemDefenseCheckList.GetItemChecked(3);
+            PRG.Bit4 = this.ElemDefenseCheckList.GetItemChecked(4);
+            PRG.Bit5 = this.ElemDefenseCheckList.GetItemChecked(5);
+            PRG.Bit6 = this.ElemDefenseCheckList.GetItemChecked(6);
+            PRG.Bit7 = this.ElemDefenseCheckList.GetItemChecked(7);
+
+            if (PRG.Bit0 == true) { ElemWriteByte = ElemWriteByte + 128; }
+            if (PRG.Bit1 == true) { ElemWriteByte = ElemWriteByte + 64; }
+            if (PRG.Bit2 == true) { ElemWriteByte = ElemWriteByte + 32; }
+            if (PRG.Bit3 == true) { ElemWriteByte = ElemWriteByte + 16; }
+            if (PRG.Bit4 == true) { ElemWriteByte = ElemWriteByte + 8; }
+            if (PRG.Bit5 == true) { ElemWriteByte = ElemWriteByte + 4; }
+            if (PRG.Bit6 == true) { ElemWriteByte = ElemWriteByte + 2; }
+            if (PRG.Bit7 == true) { ElemWriteByte = ElemWriteByte + 1; }
+
+
+
+            PRG.ROM[PRG.CurrentOffset + 3] = Convert.ToByte(ElemWriteByte);
+
 
         }
 
@@ -160,5 +178,9 @@ namespace FinalFantasy2_J_WeaponEditor
             File.WriteAllBytes(this.SaveAsRom.FileName, PRG.ROM);
         }
 
+        private void ElemDefenseCheckList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

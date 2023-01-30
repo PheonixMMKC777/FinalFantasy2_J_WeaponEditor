@@ -161,7 +161,7 @@ namespace FinalFantasy2_J_WeaponEditor
             "Power G"});
             this.ArmorList.Location = new System.Drawing.Point(12, 33);
             this.ArmorList.Name = "ArmorList";
-            this.ArmorList.Size = new System.Drawing.Size(94, 407);
+            this.ArmorList.Size = new System.Drawing.Size(94, 212);
             this.ArmorList.TabIndex = 1;
             this.ArmorList.SelectedIndexChanged += new System.EventHandler(this.ArmorList_SelectedIndexChanged);
             // 
@@ -245,6 +245,7 @@ namespace FinalFantasy2_J_WeaponEditor
             this.ElemDefenseCheckList.Name = "ElemDefenseCheckList";
             this.ElemDefenseCheckList.Size = new System.Drawing.Size(120, 124);
             this.ElemDefenseCheckList.TabIndex = 10;
+            this.ElemDefenseCheckList.SelectedIndexChanged += new System.EventHandler(this.ElemDefenseCheckList_SelectedIndexChanged);
             // 
             // MagicresistL
             // 
@@ -292,7 +293,7 @@ namespace FinalFantasy2_J_WeaponEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 450);
+            this.ClientSize = new System.Drawing.Size(476, 257);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.StatBoostL);
             this.Controls.Add(this.StatBoostComboBox);
