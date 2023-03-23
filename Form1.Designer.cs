@@ -127,6 +127,8 @@ namespace FinalFantasy2_J_WeaponEditor
             this.WeaponUpdateButton = new System.Windows.Forms.Button();
             this.WeaponTypeLabel = new System.Windows.Forms.Label();
             this.DividerLabel = new System.Windows.Forms.Label();
+            this.HexLabel2 = new System.Windows.Forms.Label();
+            this.HexLabel1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,14 +154,14 @@ namespace FinalFantasy2_J_WeaponEditor
             // openRomToolStripMenuItem
             // 
             this.openRomToolStripMenuItem.Name = "openRomToolStripMenuItem";
-            this.openRomToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.openRomToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openRomToolStripMenuItem.Text = "Open Rom";
             this.openRomToolStripMenuItem.Click += new System.EventHandler(this.openRomToolStripMenuItem_Click);
             // 
             // saveRomToolStripMenuItem
             // 
             this.saveRomToolStripMenuItem.Name = "saveRomToolStripMenuItem";
-            this.saveRomToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.saveRomToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveRomToolStripMenuItem.Text = "Save Rom";
             this.saveRomToolStripMenuItem.Click += new System.EventHandler(this.saveRomToolStripMenuItem_Click);
             // 
@@ -220,28 +222,28 @@ namespace FinalFantasy2_J_WeaponEditor
             // 
             // DefenseBox
             // 
-            this.DefenseBox.Location = new System.Drawing.Point(245, 398);
+            this.DefenseBox.Location = new System.Drawing.Point(226, 398);
             this.DefenseBox.Name = "DefenseBox";
             this.DefenseBox.Size = new System.Drawing.Size(55, 20);
             this.DefenseBox.TabIndex = 2;
             // 
             // EvadePenaltyBox
             // 
-            this.EvadePenaltyBox.Location = new System.Drawing.Point(245, 467);
+            this.EvadePenaltyBox.Location = new System.Drawing.Point(226, 467);
             this.EvadePenaltyBox.Name = "EvadePenaltyBox";
             this.EvadePenaltyBox.Size = new System.Drawing.Size(55, 20);
             this.EvadePenaltyBox.TabIndex = 3;
             // 
             // MagicPenaltyBox
             // 
-            this.MagicPenaltyBox.Location = new System.Drawing.Point(245, 502);
+            this.MagicPenaltyBox.Location = new System.Drawing.Point(226, 502);
             this.MagicPenaltyBox.Name = "MagicPenaltyBox";
             this.MagicPenaltyBox.Size = new System.Drawing.Size(55, 20);
             this.MagicPenaltyBox.TabIndex = 4;
             // 
             // MagicDefenseBox
             // 
-            this.MagicDefenseBox.Location = new System.Drawing.Point(245, 432);
+            this.MagicDefenseBox.Location = new System.Drawing.Point(226, 432);
             this.MagicDefenseBox.Name = "MagicDefenseBox";
             this.MagicDefenseBox.Size = new System.Drawing.Size(55, 20);
             this.MagicDefenseBox.TabIndex = 5;
@@ -249,7 +251,7 @@ namespace FinalFantasy2_J_WeaponEditor
             // DefenseL
             // 
             this.DefenseL.AutoSize = true;
-            this.DefenseL.Location = new System.Drawing.Point(189, 401);
+            this.DefenseL.Location = new System.Drawing.Point(170, 401);
             this.DefenseL.Name = "DefenseL";
             this.DefenseL.Size = new System.Drawing.Size(50, 13);
             this.DefenseL.TabIndex = 6;
@@ -258,7 +260,7 @@ namespace FinalFantasy2_J_WeaponEditor
             // MagicDefenseL
             // 
             this.MagicDefenseL.AutoSize = true;
-            this.MagicDefenseL.Location = new System.Drawing.Point(157, 435);
+            this.MagicDefenseL.Location = new System.Drawing.Point(138, 435);
             this.MagicDefenseL.Name = "MagicDefenseL";
             this.MagicDefenseL.Size = new System.Drawing.Size(82, 13);
             this.MagicDefenseL.TabIndex = 7;
@@ -267,7 +269,7 @@ namespace FinalFantasy2_J_WeaponEditor
             // EvadePenaltyL
             // 
             this.EvadePenaltyL.AutoSize = true;
-            this.EvadePenaltyL.Location = new System.Drawing.Point(160, 470);
+            this.EvadePenaltyL.Location = new System.Drawing.Point(141, 470);
             this.EvadePenaltyL.Name = "EvadePenaltyL";
             this.EvadePenaltyL.Size = new System.Drawing.Size(79, 13);
             this.EvadePenaltyL.TabIndex = 8;
@@ -276,7 +278,7 @@ namespace FinalFantasy2_J_WeaponEditor
             // MagicPenaltyL
             // 
             this.MagicPenaltyL.AutoSize = true;
-            this.MagicPenaltyL.Location = new System.Drawing.Point(162, 505);
+            this.MagicPenaltyL.Location = new System.Drawing.Point(143, 505);
             this.MagicPenaltyL.Name = "MagicPenaltyL";
             this.MagicPenaltyL.Size = new System.Drawing.Size(77, 13);
             this.MagicPenaltyL.TabIndex = 9;
@@ -617,11 +619,33 @@ namespace FinalFantasy2_J_WeaponEditor
             this.DividerLabel.Size = new System.Drawing.Size(450, 2);
             this.DividerLabel.TabIndex = 35;
             // 
+            // HexLabel2
+            // 
+            this.HexLabel2.AutoSize = true;
+            this.HexLabel2.BackColor = System.Drawing.SystemColors.Control;
+            this.HexLabel2.Location = new System.Drawing.Point(238, 382);
+            this.HexLabel2.Name = "HexLabel2";
+            this.HexLabel2.Size = new System.Drawing.Size(32, 13);
+            this.HexLabel2.TabIndex = 36;
+            this.HexLabel2.Text = "(Hex)";
+            // 
+            // HexLabel1
+            // 
+            this.HexLabel1.AutoSize = true;
+            this.HexLabel1.BackColor = System.Drawing.SystemColors.Control;
+            this.HexLabel1.Location = new System.Drawing.Point(238, 85);
+            this.HexLabel1.Name = "HexLabel1";
+            this.HexLabel1.Size = new System.Drawing.Size(32, 13);
+            this.HexLabel1.TabIndex = 37;
+            this.HexLabel1.Text = "(Hex)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 601);
+            this.Controls.Add(this.HexLabel1);
+            this.Controls.Add(this.HexLabel2);
             this.Controls.Add(this.DividerLabel);
             this.Controls.Add(this.WeaponTypeLabel);
             this.Controls.Add(this.WeaponUpdateButton);
@@ -713,6 +737,8 @@ namespace FinalFantasy2_J_WeaponEditor
         private System.Windows.Forms.Button WeaponUpdateButton;
         private System.Windows.Forms.Label WeaponTypeLabel;
         private System.Windows.Forms.Label DividerLabel;
+        private System.Windows.Forms.Label HexLabel2;
+        private System.Windows.Forms.Label HexLabel1;
     }
 }
 

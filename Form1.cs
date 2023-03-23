@@ -93,7 +93,6 @@ namespace FinalFantasy2_J_WeaponEditor
 
 
             byte Dbit = PRG.ROM[PRG.CurrentOffset + 3];
-            byte RBit;
 
             PRG.Bit0 = Convert.ToBoolean(Dbit & 0b10000000); //ice
             PRG.Bit1 = Convert.ToBoolean(Dbit & 0b01000000); //poi
